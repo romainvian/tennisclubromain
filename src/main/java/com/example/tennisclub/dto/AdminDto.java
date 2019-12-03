@@ -1,7 +1,5 @@
 package com.example.tennisclub.dto;
 
-
-
 import java.util.List;
 
 public class AdminDto {
