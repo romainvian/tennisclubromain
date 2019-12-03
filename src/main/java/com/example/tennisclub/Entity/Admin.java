@@ -6,8 +6,8 @@ public class Admin {
     private String name;
     private String reservation;
     private String picture;
-    private User ListUsers[];
-    private Court ListCourt[];
+    private List<User> ListUsers;
+    private List <Court> ListCourt;
 
 
     public Admin(String name, String reservation, String picture) {
@@ -40,13 +40,22 @@ public class Admin {
         this.picture = picture;
     }
 
-    public User[] getListUsers() {
+    public List<User> getListUsers() {
         return ListUsers;
     }
 
-    public void setListUsers(User[] listUsers) {
+    public void setListUsers(List<User> listUsers) {
         ListUsers = listUsers;
     }
 
+    public List<Court> getListCourt() {
+        return ListCourt;
+    }
 
+    public void setListCourt(List<Court> listCourt) {
+        ListCourt = listCourt;
+    }
 }
+
+
+
