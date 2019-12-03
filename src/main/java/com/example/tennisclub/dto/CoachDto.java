@@ -1,21 +1,23 @@
-package com.example.tennisclub.Entity;
+package com.example.tennisclub.dto;
+
+import com.example.tennisclub.Entity.User;
 
 import java.util.Date;
 import java.util.List;
 
-public class Coach {
+public class CoachDto {
     private long id;
     private String name;
     private Date dateofLesson;
     private boolean isAvailable;
-    private List <User> Usertotrain;
+    private List<UserDto> UserDtototrain;
 
-    public Coach(long id, String name, Date dateofLesson, boolean isAvailable, List<User> usertotrain) {
+    public CoachDto(long id, String name, Date dateofLesson, boolean isAvailable, List<UserDto> userDtototrain) {
         this.id = id;
         this.name = name;
         this.dateofLesson = dateofLesson;
         this.isAvailable = isAvailable;
-        Usertotrain = usertotrain;
+        UserDtototrain = userDtototrain;
     }
 
     public long getId() {
@@ -50,11 +52,11 @@ public class Coach {
         isAvailable = available;
     }
 
-    public List<User> getUsertotrain() {
-        return Usertotrain;
+    public List<UserDto> getUserDtototrain() {
+        return UserDtototrain;
     }
 
-    public void setUsertotrain(List<User> usertotrain) {
-        Usertotrain = usertotrain;
+    public void setUserDtototrain(List<UserDto> userDtototrain) {
+        UserDtototrain = userDtototrain;
     }
 }

@@ -10,13 +10,15 @@ public class AdminDto {
     private String image;
     private List<UserDto> userDto;
     private List<CourtDto> courtDto;
+    private List<CoachDto> coachDto;
 
-    public AdminDto(String name, String reservation, String image, List<UserDto> userDto, List<CourtDto> courtDto) {
+    public AdminDto(String name, String reservation, String image, List<UserDto> userDto, List<CourtDto> courtDto, List<CoachDto> coachDto) {
         this.name = name;
         this.reservation = reservation;
         this.image = image;
         this.userDto = userDto;
         this.courtDto = courtDto;
+        this.coachDto=coachDto;
     }
 
     public String getName() {
@@ -57,5 +59,13 @@ public class AdminDto {
 
     public void setCourtDto(List<CourtDto> courtDto) {
         this.courtDto = courtDto;
+    }
+
+    public List<CoachDto> getCoachDto() {
+        return coachDto;
+    }
+
+    public void setCoachDto(List<CoachDto> coachDto) {
+        this.coachDto = coachDto;
     }
 }
